@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import SideNav from "../components/SideNav/SideNav";
 
 class SideBar extends Component
 {
@@ -9,14 +10,37 @@ class SideBar extends Component
      
       this.state =
       {
-          category:"business"
+          open:false,
+          routes:
+          [
+              {
+                  name:"dashboard"
+              },
+              {
+                  name:"operations"
+              },
+              {
+                  name:"records"
+              },
+              {
+                  name:"supply store"
+              },
+              {
+                  name:"market place"
+              },
+
+          ]
       }
     }
     
 
     render()
     {
-        return <h1>Sidebar</h1>
+        return (
+        <>
+           <SideNav routes={this.state.routes} />
+        </>
+        );
     }
 
 }

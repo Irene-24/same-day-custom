@@ -1,0 +1,23 @@
+.SideNav
+{
+    width:60px;
+    max-width: 60px;
+    min-height:100vh;
+    background-color: var(--blue);
+    position: fixed;
+    color:#fff;
+}
+
+.Hamburger
+{
+    cursor: pointer;
+}
+
+.Hamburger div
+{
+    background-color: #fff;
+    width: 20px;
+    height: 4px;
+    border-radius: 5px;
+    margin: auto;
+}
