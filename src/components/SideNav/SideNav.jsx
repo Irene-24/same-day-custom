@@ -11,7 +11,8 @@ import settings from "../../assets/img/settings.svg";
 const sideNav = props => {
   return (
     <div className={classes.SideNav}>
-      <div className={classes.Hamburger}>
+      <div className={classes.Hamburger}
+      onClick = {props.toggle}>
         <div></div>
         <div></div>
         <div></div>

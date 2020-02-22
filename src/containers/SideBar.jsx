@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import SideNav from "../components/SideNav/SideNav";
-import SideNavFull from "../components/SideNav/SideNav";
+import SideNavFull from "../components/SideNavFull/SideNavFull";
 
 
 class SideBar extends Component
@@ -35,14 +35,24 @@ class SideBar extends Component
           ]
       }
     }
+
+    toggleSideBar = () =>
+    {
+        const open = !this.state.open;
+        this.setState({ open : open });
+    }
     
 
     render()
     {
         return (
         <>
-           <SideNav />
-           <SideNavFull routes={this.state.routes} />
+           <SideNav 
+           toggle = {this.toggleSideBar} />
+           <SideNavFull 
+           routes={this.state.routes} 
+           isOpen={this.state.open}
+           toggle = {this.toggleSideBar}/>
         </>
         );
     }

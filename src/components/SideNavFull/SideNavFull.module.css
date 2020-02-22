@@ -1,0 +1,50 @@
+.SideBar
+{
+    width:250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:100vh;
+    background-color: var(--blue);
+    position: fixed;
+    color:#fff; 
+    z-index: 20;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(-100%);
+    padding-left: 10px;
+}
+
+.Open
+{ 
+    transform: translateX(0%);
+
+}
+
+.Close
+{
+    cursor: pointer;
+    margin-top: 30px ;
+
+
+}
+
+.Close div
+{
+
+    background-color: #fff;
+    width: 28px;
+    height: 4px;
+    border-radius: 5px;
+    position: fixed;
+
+}
+
+.Close div:nth-child(1)
+{
+    transform: rotate(45deg);
+
+}
+
+.Close div:nth-child(2)
+{
+    transform: rotate(-45deg);
+}
