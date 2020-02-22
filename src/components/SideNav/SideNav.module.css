@@ -1,8 +1,9 @@
 .SideNav
 {
-    width:60px;
-    max-width: 60px;
-    min-height:100vh;
+    width:50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:100vh;
     background-color: var(--blue);
     position: fixed;
     color:#fff;
@@ -11,13 +12,103 @@
 .Hamburger
 {
     cursor: pointer;
+    width:28px;
+    margin: 30px auto 0 ;
 }
 
 .Hamburger div
 {
     background-color: #fff;
-    width: 20px;
+    width: 100%;
     height: 4px;
     border-radius: 5px;
-    margin: auto;
+    margin: 5px auto;
+}
+
+.Navlist
+{
+    list-style-type: none;
+    margin-top: 58px;
+}
+
+.Navlist li
+{
+    margin: 0 auto 24px;
+    max-width: 24px;
+    position: relative;
+}
+
+.Navlist img
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.Navlist .Active
+{
+    background-color: var(--light-blue);
+    width:40px;
+    height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.Navlist .Active img
+{
+
+    width:26px;
+    transform: translate(30%, 28%)
+}
+
+
+
+.Settings
+{
+    width:28px;
+    margin: 40px auto 10px;
+    cursor: pointer;
+}
+
+.Settings img
+{
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px)
+{
+
+    .SideNav
+    {
+        width:60px;
+    }
+
+    .Navlist
+    {
+     
+        margin-top: 70px;
+    }
+
+
+    .Settings
+    {
+        margin-top: 90px ;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px)
+{
+    .Navlist
+    {
+        margin-top: 100px;
+    }
+
+    
+    .Settings
+    {
+        margin-top: 120px ;
+    }
 }

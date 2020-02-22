@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import SideNav from "../components/SideNav/SideNav";
+import SideNavFull from "../components/SideNav/SideNav";
+
 
 class SideBar extends Component
 {
@@ -11,6 +13,7 @@ class SideBar extends Component
       this.state =
       {
           open:false,
+          active:1,
           routes:
           [
               {
@@ -38,7 +41,8 @@ class SideBar extends Component
     {
         return (
         <>
-           <SideNav routes={this.state.routes} />
+           <SideNav />
+           <SideNavFull routes={this.state.routes} />
         </>
         );
     }

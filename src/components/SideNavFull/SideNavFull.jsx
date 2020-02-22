@@ -8,7 +8,7 @@ import pile from "../../assets/img/box-pile.svg";
 import chat from "../../assets/img/chat.svg";
 import settings from "../../assets/img/settings.svg";
 
-const sideNav = props => {
+const sideNavFull = props => {
   return (
     <div className={classes.SideNav}>
       <div className={classes.Hamburger}>
@@ -52,4 +52,4 @@ const sideNav = props => {
   );
 };
 
-export default sideNav;
+export default sideNavFull;
