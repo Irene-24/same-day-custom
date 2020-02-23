@@ -19,27 +19,27 @@ const sideNav = props => {
       </div>
 
       <ul className={classes.Navlist}>
-        <li>
+        <li onClick= {props.toggle}>
           <img src={dashboard} alt="dashboard icon" />
         </li>
 
-        <li className={classes.Active}>
+        <li onClick= {props.toggle} className={classes.Active}>
           <img src={timeLeft} alt="time left icon" />
         </li>
 
-        <li>
+        <li onClick= {props.toggle}>
           <img src={file} alt="file icon" />
         </li>
 
-        <li>
+        <li onClick= {props.toggle}>
           <img src={cart} alt="shopping cart icon" />
         </li>
 
-        <li>
+        <li onClick= {props.toggle}>
           <img src={pile} alt="pile of boxes icon" />
         </li>
 
-        <li>
+        <li onClick= {props.toggle}>
           <img src={chat} alt="chat icon" />
         </li>
 

@@ -1,12 +1,8 @@
 import React from "react";
+import NavItem from "../NavItem/NavItem";
 import classes from "./SideNavFull.module.css";
-// import dashboard from "../../assets/img/dashboard.svg";
-// import timeLeft from "../../assets/img/time-left.svg";
-// import file from "../../assets/img/file-1.svg";
-// import cart from "../../assets/img/shopping-cart-2.svg";
-// import pile from "../../assets/img/box-pile.svg";
-// import chat from "../../assets/img/chat.svg";
-// import settings from "../../assets/img/settings.svg";
+
+import settings from "../../assets/img/settings.svg";
 
 const sideNavFull = props => {
 
@@ -23,7 +19,23 @@ const sideNavFull = props => {
         <div></div>
       </div>
 
-      <hr/>
+
+      <ul className={classes.Navlist}>
+
+        {
+          props.routes.map( item => <NavItem 
+            text={item.name} icon={item.icon}  /> )
+        }
+          
+        </ul>
+
+
+        <div className={classes.Settings}>
+        <NavItem 
+            text="settings" icon={settings}   />
+      </div>
+
+     
 
   
     </div>

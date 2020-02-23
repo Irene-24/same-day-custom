@@ -1,0 +1,53 @@
+.NavItem
+{
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+    padding-left: 16px
+
+}
+
+
+.NavItem a
+{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 14px 5px 10px;
+    position: relative;
+    font-family: "";
+}
+
+.NavItem a.Active,.NavItem a:hover
+{
+    background-color: var(--light-blue);
+}
+
+
+.NavItem a.Active::before,.NavItem a:hover::before
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    transform: translateX(-100%);
+    background-color: var(--light-blue);
+    width: 16px;
+    height: 100%;
+}
+
+.NavItem img
+{
+    color: #fff;
+    text-decoration: none;
+    max-width: 24px;
+}
+
+.NavItem span
+{
+    vertical-align: super;
+    padding-left: 24px;
+}
+

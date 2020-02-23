@@ -2,6 +2,13 @@ import React, {Component} from "react";
 import SideNav from "../components/SideNav/SideNav";
 import SideNavFull from "../components/SideNavFull/SideNavFull";
 
+import dashboard from "../assets/img/dashboard.svg";
+import timeLeft from "../assets/img/time-left.svg";
+import file from "../assets/img/file-1.svg";
+import cart from "../assets/img/shopping-cart-2.svg";
+import pile from "../assets/img/box-pile.svg";
+import chat from "../assets/img/chat.svg";
+
 
 class SideBar extends Component
 {
@@ -17,20 +24,29 @@ class SideBar extends Component
           routes:
           [
               {
-                  name:"dashboard"
+                  name:"dashboard",
+                  icon:dashboard
               },
               {
-                  name:"operations"
+                  name:"operations",
+                  icon:timeLeft
               },
               {
-                  name:"records"
+                  name:"records",
+                  icon:file
               },
               {
-                  name:"supply store"
+                  name:"supply store",
+                  icon:cart
               },
               {
-                  name:"market place"
-              },
+                  name:"market place",
+                  icon:pile
+              },       
+              {
+                name:"forums",
+                icon:chat
+            }
 
           ]
       }
