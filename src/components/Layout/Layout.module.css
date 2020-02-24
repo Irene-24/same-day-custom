@@ -1,0 +1,9 @@
+.Container
+{
+    margin-left: 50px;
+}
+
+.Container header
+{
+    min-height: 80px;
+}

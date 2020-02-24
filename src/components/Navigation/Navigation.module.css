@@ -1,0 +1,188 @@
+.Navbar
+{
+    padding: 8px;
+    box-shadow: 0px 3px 50px #1877FF1C;
+    z-index:20;
+}
+
+.Logo
+{
+    width:110px;
+}
+
+.NavMenu
+{
+  position: fixed;
+  top:8px;
+  right:8px;
+  cursor: pointer;    
+  padding: 5px 10px
+}
+
+.NavMenu div
+{
+    width: 8px;
+    margin-bottom: 2px;
+    height: 8px;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+.RightNav
+{
+    
+    width:200px;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    top:54px;
+    padding: 0 10px;
+    box-shadow: -1px 2px 2px #ccc;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.RightNav.Active
+{
+    transform: translateX(0%);
+}
+
+.NavLinks
+{
+    list-style-type: none;
+    padding-top: 20px;
+   
+}
+
+.NavLinks img
+{
+    width: 30px;
+    max-height: 24px;
+}
+
+
+.NavLinks li
+{
+    margin-bottom: 10px;
+}
+
+.NavLinks a
+{
+   text-decoration: none;
+}
+
+.NavLinks span
+{
+    padding-left: 20px;
+    vertical-align: super;
+}
+
+.Avatar
+{
+    position: relative;
+}
+
+.Avatar::before
+{
+    position: absolute;
+    height: 50%;
+    top:20%;
+    left:0;
+    width:1px;
+    background-color: #ccc;
+    content: "";
+    display: none;
+
+}
+
+.Avatar img
+{
+    width:50px;
+    height:50px;
+    border: 2px solid var(--blue);
+    border-radius:50%;
+
+}
+
+.Avatar span
+{
+    display: block;
+    text-align: start;
+    padding-left: 10px;
+}
+
+
+
+
+@media screen and (min-width:768px)
+{
+    .Navbar
+    {
+        padding: 8px 20px;
+    }
+
+}
+
+@media screen and (min-width:1200px)
+{
+    .Navbar
+    {
+        padding: 5px 32px;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .NavMenu
+    {
+        display: none;
+    }
+
+
+    .Logo
+    {
+        width:150px;
+    }
+
+    .NavLinks li
+    {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    .NavLinks li a
+    {
+        display: block;
+        margin-right: 20px;
+        border-left: 1px solid #ccc;
+        padding-left:10px;
+    }
+
+    .RightNav
+    {
+        display: flex;
+        width: unset;
+        position: initial;
+        box-shadow: none;
+    }
+
+    .Avatar
+    {       
+        padding-left: 10px;
+    }
+
+    .Avatar span
+    {
+       text-align: center;
+       padding: 0;
+    }
+
+    .Avatar::before
+    {
+        display: initial;
+    }
+
+    
+
+
+}
