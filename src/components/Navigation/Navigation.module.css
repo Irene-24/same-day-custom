@@ -6,6 +6,7 @@
     position: fixed;
     width: calc(100% - 50px);
     font-family:'HVN-M' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
 }
 
 .Logo

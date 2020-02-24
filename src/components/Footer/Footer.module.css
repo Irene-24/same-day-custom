@@ -1,12 +1,79 @@
 footer
 {
     position: absolute;
-    display: ;
+    font-size: 13px;
+    display: block;
+    z-index:10;
     background-color: var(--lighter-blue);
     padding: 30px 10px;
     bottom:0;
     left: 0;
     width: 100%;
+    font-family: "Nunito";
+}
+
+
+footer  > div
+{
+    margin-top: 20px
+}
+.FooterHead
+{
+    color: var(--blue);
+    font-family: "Nunito-B";
+}
+
+.Download
+{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.Adjust
+{
+    transform: translate(2px, 2px);
+}
+
+.Download img
+{
+    width: 50%;
+    height: 24px;
+}
+
+.Social
+{
+    width:40px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+.Social img
+{
+    width: 70%;
+}
+
+
+.FooterText 
+{
+    flex-basis: 43%;
+    font-size: 14px;
+}
+
+.FooterText  a
+{
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Nunito";
+  margin-right: 15px;
+  margin-top: 20px;
+  color:var(--link)
 }
 
 @media screen and (min-width:768px)
@@ -17,6 +84,12 @@ footer
         display: flex;
         justify-content: space-between;
         width: calc(100% - 60px);
+    }
+
+    footer > div
+    {
+        margin: 0 15px;
+        
     }
 
 }

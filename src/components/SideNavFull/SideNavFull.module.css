@@ -18,6 +18,19 @@ a
     transform: translateX(-100%);
 }
 
+
+
+.SideBar::-webkit-scrollbar-thumb 
+{
+   
+    border: 1px solid #fff;
+    border-radius: 0px;
+    background-color:#fff;
+    background-clip: padding-box;
+    box-shadow: none;
+}
+
+
 .Open
 { 
     transform: translateX(0%);
