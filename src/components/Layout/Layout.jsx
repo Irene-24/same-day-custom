@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Layout.module.css";
 import Navigation from "../Navigation/Navigation";
+import Footer from "../Footer/Footer";
 
 const layout = props => 
 {
@@ -12,6 +13,10 @@ const layout = props =>
          <header>
              <Navigation />
          </header>
+
+         <Footer />
+
+
          
      </div>
      
