@@ -1,3 +1,9 @@
+a
+{
+    font-family: "HVN-B", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; 
+    letter-spacing: 1px;  
+
+}
 .SideBar
 {
     width:250px;
@@ -7,7 +13,7 @@
     background-color: var(--blue);
     position: fixed;
     color:#fff; 
-    z-index: 20;
+    z-index: 30;
     transition: transform 0.4s ease-in-out;
     transform: translateX(-100%);
 }
@@ -60,6 +66,7 @@
 .Navlist li a
 {   
     box-shadow: 2px 1px 2px #0000001F;
+    letter-spacing: 1px;
 }
 
 .Settings
@@ -67,6 +74,9 @@
     margin: 60px 0 10px;
     cursor: pointer;
 }
+
+
+
 
 .Settings img
 {

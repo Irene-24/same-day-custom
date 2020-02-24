@@ -5,6 +5,7 @@
     z-index:20;
     position: fixed;
     width: calc(100% - 50px);
+    font-family:'HVN-M' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Logo
@@ -72,6 +73,7 @@
 .NavLinks a
 {
    text-decoration: none;
+   color: #9a9a9a;;
 }
 
 .NavLinks span
@@ -112,6 +114,8 @@
     display: block;
     text-align: start;
     padding-left: 10px;
+    color: #9a9a9a;
+    font-family: "HVN-M";
 }
 
 

@@ -60,6 +60,7 @@ class  Navigation extends Component
                 </ul>
         
                 <div className={classes.Avatar}>
+                    
                     <img src={user} alt="avatar of user" />
                     <span>Me</span>
                 </div>

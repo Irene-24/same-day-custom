@@ -1,3 +1,23 @@
+@font-face
+{
+  font-family: 'HVN-M';
+  src: url("./assets/fonts/helveticaneue/HelveticaNeue-Medium.ttf");
+}
+
+@font-face
+{
+  font-family: 'HVN';
+  src: url("./assets/fonts/helveticaneue/HelveticaNeue.ttf");
+}
+
+
+@font-face
+{
+  font-family: 'HVN-B';
+  src: url("./assets/fonts/helveticaneue/Helvetica-Neu-Bold.ttf");
+}
+
+
 :root
 {
     --blue:#196bd8;
