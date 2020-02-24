@@ -1,9 +1,17 @@
 .Container
 {
     margin-left: 50px;
-    min-height: 100vh;
+    min-height: 150vh;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 600px;
+}
+
+.MainContent
+{
+    padding: 40px 20px; 
+    overflow-y: auto;   
+    max-height: 200vh;
+    margin-right: 10px;
 }
 
 .Container header
@@ -15,7 +23,8 @@
 {
     .Container
     {
-        margin-left: 60px;
+        margin-left: 60px;      
+        padding-bottom: 350px;
     }
 
 }

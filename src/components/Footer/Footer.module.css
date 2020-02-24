@@ -80,10 +80,9 @@ footer  > div
 {
     footer
     {
-        left: 60px;
         display: flex;
         justify-content: space-between;
-        width: calc(100% - 60px);
+        width: 100%;
     }
 
     footer > div
