@@ -38,21 +38,21 @@ class  Navigation extends Component
               <div  className={styles}>
                 <ul className={classes.NavLinks}>
                   <li>
-                    <NavLink to="" exact="">
+                    <NavLink to="" >
                       <img src={mail} alt="message icon" />
                       <span>Message</span>
                     </NavLink>
                   </li>
         
                   <li>
-                    <NavLink to="" exact="">
+                    <NavLink to="" >
                       <img src={cart} alt="cart icon" />
                       <span>Market Place</span>
                     </NavLink>
                   </li>
         
                   <li>
-                    <NavLink to="" exact="">
+                    <NavLink to="" >
                       <img src={mail} alt="message icon" />
                       <span>Notifications</span>
                     </NavLink>

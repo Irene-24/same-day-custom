@@ -3,6 +3,8 @@
     padding: 8px;
     box-shadow: 0px 3px 50px #1877FF1C;
     z-index:20;
+    position: fixed;
+    width: calc(100% - 50px);
 }
 
 .Logo
@@ -119,7 +121,8 @@
 {
     .Navbar
     {
-        padding: 8px 20px;
+        padding: 8px 20px; 
+        width: calc(100% - 50px);
     }
 
 }
@@ -164,6 +167,7 @@
         width: unset;
         position: initial;
         box-shadow: none;
+        transform: translateX(0%);
     }
 
     .Avatar

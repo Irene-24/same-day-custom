@@ -23,7 +23,7 @@ const sideNavFull = props => {
       <ul className={classes.Navlist}>
 
         {
-          props.routes.map( item => <NavItem 
+          props.routes.map( item => <NavItem key={item.name} 
             text={item.name} icon={item.icon}  /> )
         }
           
