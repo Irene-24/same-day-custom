@@ -1,0 +1,157 @@
+.preTable > div
+{
+    
+    margin-bottom: 20px;
+}
+
+.Title img
+{
+    width:40px;
+    transform: translateY(5px);
+}
+
+.Title h3
+{
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: super;
+    font-family: "HVN-B";
+}
+
+.SearchSelect > *
+{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.SearchSelect select
+{
+    background-color: var(--blue);
+    color:#fff;
+    padding: 14px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.Search
+{
+    background-color: var(--gray);
+    padding: 10px 15px;
+    border-radius: 6px;    
+    transform: translateY(2px);
+
+}
+
+.Search img
+{
+    width: 20px;
+}
+
+.Search span
+{
+    cursor:pointer;
+    font-family: "HVN-M";
+}
+
+.Search input
+{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    margin: 0 10px;
+    width:60%;
+}
+
+.TabsList
+{
+    margin-top: 60px;
+}
+
+.Tabs
+{
+    padding: 4px;
+    font-family: "HVN-M";
+}
+
+.Tabs h4
+{
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.Tabs span
+{
+    color: #fff;
+    background-color: var(--red);
+    border-radius: 50%;
+    font-size: 12px;
+    padding:4px
+    
+}
+
+.Active
+{
+    border-bottom: 3px solid var(--light-blue);
+    color: var(--light-blue);
+}
+
+.Tabs .Active span
+{
+   background-color: transparent;
+   color: #ccc;
+}
+
+@media screen and (min-width:768px)
+{
+
+    .preTable 
+    {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .preTable > div
+    {
+        margin-bottom: 10px;
+    }
+
+    .SearchSelect > *
+    {        
+        margin-bottom: 0;
+    }
+
+    .Search input
+    {
+        width:auto;
+    }
+
+    .TabsList
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        
+    .Tabs > div
+    {
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        padding-right: 15px;
+    }
+
+    .Tabs > div::after
+    {
+        width: 1px;
+        height: 70%;
+        position: absolute;
+        content: "";
+        right: 0;
+        background-color: #ccc;
+    }
+
+}
