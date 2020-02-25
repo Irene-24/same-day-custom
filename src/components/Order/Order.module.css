@@ -56,12 +56,14 @@ td
 .Qty
 {
     text-transform: capitalize;
+    min-width:100px;
 }
 
 .Time
 {
     color:var(--gray);
-    min-width: 150px;
+    min-width: 200px;
+    font-size: 13px;
 }
 
 .Time span

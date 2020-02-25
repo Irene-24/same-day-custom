@@ -20,7 +20,7 @@ const order = props => {
 
     const rem = `${hh.substring(hh.length-2)}:${mm.substring(mm.length-2)}:${ss.substring(ss.length-2)}`;
  
-    const date  = `${time.getUTCDate()} - ${months[time.getUTCMonth()]} - ${time.getMonth()} `
+    const date  = `${time.getUTCDate()} - ${months[time.getUTCMonth()]} - ${time.getYear()} `
   return (
     <tr>
       <td>
