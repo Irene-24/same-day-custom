@@ -5,7 +5,7 @@ const order = props => {
     const time = new Date(props.order.time);
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-    const second = 1,
+    const second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
@@ -42,7 +42,7 @@ const order = props => {
   <p> Time Left : <span >{rem}</span> </p>
          
         </td>
-      <td>{props.order.status}</td>
+      <td className={classes.Status} >{props.order.status}</td>
     </tr>
   );
 };

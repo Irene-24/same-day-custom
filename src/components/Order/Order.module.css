@@ -61,7 +61,7 @@ td
 
 .Time
 {
-    color:var(--gray);
+    color:#ccc;
     min-width: 200px;
     font-size: 13px;
 }
@@ -69,6 +69,12 @@ td
 .Time span
 {
     color: var(--green);
+}
+
+.Status
+{
+    color:var(--green);
+    text-align:center;
 }
 
 
