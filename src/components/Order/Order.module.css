@@ -1,0 +1,72 @@
+tr
+{
+    background-color: #fff;
+    font-family: "Nunito-B";
+}
+
+tr:hover
+{
+    box-shadow: 0 0 2px 3px var(--gray);
+}
+
+td
+{
+    padding: 10px 20px;
+}
+
+.Capital
+{
+    text-transform:upperCase;
+}
+
+.Desc
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.Desc img
+{
+    width:50px;
+    height: 50px;
+}
+
+.Desc span
+{
+    font-size:12px;
+}
+
+.Color
+{   
+    padding:8px;
+    color:#fff;
+    text-align: center;
+}
+
+.Color span
+{
+    display: inline-block;
+    background-color: var(--light-blue);
+    padding: 10px 12px;
+    max-height: 70px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.Qty
+{
+    text-transform: capitalize;
+}
+
+.Time
+{
+    color:var(--gray);
+    min-width: 150px;
+}
+
+.Time span
+{
+    color: var(--green);
+}
+
+

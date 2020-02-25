@@ -1,5 +1,6 @@
 import React,{ Component } from "react";
 import OrderList from "../components/OrderList/OrderList";
+import image from "../assets/img/ur.png";
 
 class Orders extends Component
 {
@@ -8,8 +9,8 @@ class Orders extends Component
         orders:
         [
             {
-                order:"#232jodjsdkn2",
-                item:"#232jodjsdkn2",
+                order:"232jodjsdkn2",
+                item:"232jodjsdkn2",
                 colors:"royal",
                 qty:"l x 4",
                 print:"DTG ",
@@ -18,23 +19,23 @@ class Orders extends Component
                 status:"Running 2 out of 5",
                 details:
                 {
-                    imageUrl:"",
+                    imageUrl:image,
                     desc:"No Minimum - More Color Available - Gildan unisex ultra cotton T- shirt (NY1)"
 
                 }
             },
             {
-                order:"#232jodjsdkn2",
-                item:"#232jodjsdkn2",
+                order:"232jodjsdkn2",
+                item:"232jodjsdkn2",
                 colors:"royal",
                 qty:"l x 4",
-                print:"DTG ",
+                print:"DTG Print",
                 method:1,
                 time:1582586575014,
                 status:"Running 2 out of 5",
                 details:
                 {
-                    imageUrl:"",
+                    imageUrl:image,
                     desc:"No Minimum - More Color Available - Gildan unisex ultra cotton T- shirt (NY1)"
 
                 }

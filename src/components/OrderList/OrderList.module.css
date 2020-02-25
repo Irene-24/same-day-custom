@@ -76,6 +76,12 @@
     font-family: "HVN-M";
 }
 
+.Tabs div
+{
+    margin-bottom: 15px;
+}
+
+
 .Tabs h4
 {
     display: inline-block;
@@ -105,14 +111,60 @@
    color: #ccc;
 }
 
+.Btns button
+{
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-family: "HVN-M";
+    margin-right: 10px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.Btns .Outlined
+{
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.Btns .Filled
+{
+   background-color: #ccc;
+   color:#fff
+}
+
+.Btns select
+{
+    border: none;
+    padding: 10px 25px;
+}
+
+.Table
+{
+    border-collapse:separate;
+    border-spacing: 0 15px;
+    min-width: 100%;
+    font-family: "HVN-M";
+}
+
+.Headers
+{
+    background-color: var(--gray);
+    font-family: "HVN-M";
+    text-align:left;
+}
+
+.Headers th
+{
+    padding: 10px 20px;
+}
+
 @media screen and (min-width:768px)
 {
 
-    .preTable 
-    {
-        display:flex;
-        justify-content: space-between;
-    }
 
     .preTable > div
     {
@@ -144,7 +196,7 @@
         padding-right: 15px;
     }
 
-    .Tabs > div::after
+    .Tabs > div:not(:last-child)::after
     {
         width: 1px;
         height: 70%;
@@ -152,6 +204,17 @@
         content: "";
         right: 0;
         background-color: #ccc;
+    }
+
+}
+
+@media screen and (min-width:1200px)
+{
+
+    .preTable 
+    {
+        display:flex;
+        justify-content: space-between;
     }
 
 }
